@@ -61,7 +61,7 @@ Now that your data is loaded, you can query it by using the BigQuery web UI, the
 
 ```bash
 bq query --nouse_legacy_sql \
-'SELECT * FROM {{project-id}}.place_name'
+'SELECT * FROM bq_sandbox.place_name'
 ```
 
 ## Congratulations
