@@ -55,30 +55,14 @@ bq load \
 ```
 
 
-## Writing in Markdown
+## Query the data
 
-To write your tutorial, use [Markdown](https://en.wikipedia.org/wiki/Markdown) and follow these guidelines:
-
-
-### Edit the title
-
-Modify the title of this tutorial ('# Introduction to writing tutorials in Cloud Shell') by changing it to:
-
+```bash
+bq query --nouse_legacy_sql '
+SELECT * 
+FROM `bq_sandbox.place_name`
+'
 ```
-# Teach me to write a tutorial
-```
-
-### Add a new step
-
-Next, add a step just after the title like this:
-
-```
-## Step 1
-This is a new step I’ve just added.
-```
-
-Each 'step' of a tutorial is displayed on one page. To move through steps, users use the 'Back' and 'Next' buttons.
-
 
 ## Congratulations
 
@@ -86,6 +70,6 @@ Each 'step' of a tutorial is displayed on one page. To move through steps, users
 
 You’re all set!
 
-You can now have users launch your tutorial in Cloud Shell and have them start using your project with ease.
+You can now explore more functionalities from BigQuery
 
 
