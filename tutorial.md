@@ -60,8 +60,10 @@ bq load \
 Now that your data is loaded, you can query it by using the BigQuery web UI, the bq command, or the API. Your queries can join your data against any dataset (or datasets, so long as they're in the same location) that you have permission to read.
 
 ```bash
-bq query --nouse_legacy_sql "
-SELECT * FROM 'bq_sandbox.place_name' "
+bq query --nouse_legacy_sql '
+SELECT *
+FROM `bq_sandbox.place_name`
+'
 ```
 
 ## Congratulations
