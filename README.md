@@ -1,6 +1,6 @@
 # cloud shell tutorials
 
-This repository contains a simple tutorial to understand Google Big Query
+This repository contains a simple tutorial to understand load data to Google Big Query
 
 [Google Cloud Shell](https://cloud.google.com/shell/docs/) is a hosted
 development environment managing resources hosted on Google Cloud Platform.
