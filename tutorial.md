@@ -31,7 +31,7 @@ gcloud config list project
 gcloud config set project <PROJECT_ID>
 ```
 
-## Get Public Data to BigQuery
+## Load Sample Data to BigQuery
 
 Create a dataset to contain your tables.
 
@@ -39,13 +39,20 @@ What is a dataset?
 A BigQuery dataset is a collection of tables. All tables in a dataset are stored in the same data location. You can also attach custom access controls to limit access to a dataset and its tables.
 
 Create a dataset
-In Cloud Shell, use the bq mk command to create a dataset called "bq_load_codelab."
+In Cloud Shell, use the bq mk command to create a dataset called "bq_sandbox."
 
 ```bash
-bq mk bq_load_codelab
+bq mk bq_sandbox
 ```
 
-Next, you will learn how to format the text in a tutorial.
+```bash
+bq load \
+    --source_format=CSV \
+    --skip_leading_rows=1 \
+    bq_sandbox.place_name \
+    ./place_name.csv \
+    place_name:string,state_name:string
+```
 
 
 ## Writing in Markdown
