@@ -57,6 +57,8 @@ bq load \
 
 ## Query the data
 
+Now that your data is loaded, you can query it by using the BigQuery web UI, the bq command, or the API. Your queries can join your data against any dataset (or datasets, so long as they're in the same location) that you have permission to read.
+
 ```bash
 bq query --nouse_legacy_sql '
 SELECT * 
