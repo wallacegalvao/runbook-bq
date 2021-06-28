@@ -9,6 +9,11 @@ This guide presents some concepts about Google Big Query.
 
 Click the **Start** button to move to the next step.
 
+## Set the GCP Project
+
+Pick up your project
+
+<walkthrough-project-setup></walkthrough-project-setup>
 
 ## Get Public Data to BigQuery
 
