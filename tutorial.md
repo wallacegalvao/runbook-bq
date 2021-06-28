@@ -1,26 +1,27 @@
-# Introduction to learn some points about Google Big Query
+# Learn some points about Google Big Query
 
 
 ## Let's get started!
 
-This guide present some concepts about Google Big Query.
+This guide presents some concepts about Google Big Query.
 
 **Time to complete**: About 10 minutes
 
 Click the **Start** button to move to the next step.
 
 
-## Opening the editor
+## Get Public Data to BigQuery
 
-You can edit a file stored in Cloud Shell using Cloud Shell’s built-in text editor.
+Create a dataset to contain your tables.
 
-*  To start, open the editor by clicking on the <walkthrough-cloud-shell-editor-icon></walkthrough-cloud-shell-editor-icon> icon.
-*  Look at the source file for this tutorial by opening `tutorial.md`.
-*  Try making a change to the file for this tutorial, then saving it using the <walkthrough-editor-spotlight spotlightId="fileMenu">file menu</walkthrough-editor-spotlight>.
+What is a dataset?
+A BigQuery dataset is a collection of tables. All tables in a dataset are stored in the same data location. You can also attach custom access controls to limit access to a dataset and its tables.
 
-To restart the tutorial with your changes, run:
+Create a dataset
+In Cloud Shell, use the bq mk command to create a dataset called "bq_load_codelab."
+
 ```bash
-cloudshell launch-tutorial -d tutorial.md
+bq mk bq_load_codelab
 ```
 
 Next, you will learn how to format the text in a tutorial.
