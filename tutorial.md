@@ -15,6 +15,22 @@ Pick up your project
 
 <walkthrough-project-setup></walkthrough-project-setup>
 
+Run the following command in Cloud Shell to confirm that you are authenticated:
+
+```bash
+gcloud auth list
+```
+
+If it is not, you can set it with this command:
+
+```bash
+gcloud config list project
+```
+
+```bash
+gcloud config set project <PROJECT_ID>
+```
+
 ## Get Public Data to BigQuery
 
 Create a dataset to contain your tables.
