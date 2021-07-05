@@ -30,6 +30,7 @@ gcloud config list project
 ```bash
 gcloud config set project <PROJECT_ID>
 ```
+If you have syntax error, please type the previous command with the name of your project without using variable.
 
 ## Load Sample Data to BigQuery
 
