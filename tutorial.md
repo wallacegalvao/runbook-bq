@@ -28,7 +28,7 @@ gcloud config list project
 ```
 
 ```bash
-gcloud config set project <PROJECT_ID>
+gcloud config set project {{project-id}}
 ```
 If you have syntax error, please type the previous command with the name of your project without using variable.
 
